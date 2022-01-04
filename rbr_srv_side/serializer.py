@@ -69,8 +69,6 @@ class PerfMonLogSerializer(serializers.ModelSerializer):
 
     def create(self, validated_data):
 
-        # print(validated_data)
-
         host_information = validated_data.pop('host_information')
         network_information = validated_data.pop('network_information')
         disk_information = validated_data.pop('disk_information')
