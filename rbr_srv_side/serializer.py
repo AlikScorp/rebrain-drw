@@ -64,8 +64,8 @@ class PerfMonLogSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = PerfMonLog
-        fields = ['id', 'created_at', 'host_information', 'network_information',
-                  'disk_information', 'cpu_information', 'memory_information', 'load_average']
+        fields = ['id', 'created_at', 'host_information', 'network_information', 'disk_information',
+                  'cpu_information', 'memory_information', 'load_average']
 
     def create(self, validated_data):
 
